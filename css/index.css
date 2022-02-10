@@ -1,0 +1,513 @@
+/* ========== Fonts ========== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@font-face {
+    font-family: Biko;
+    src: url("../assets/fonts/Biko/Biko.otf");
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url("../assets/fonts/Myriad/Myriad.otf");
+}
+/* ========== End Fonts ========== */
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Myriad;
+    display: block;
+}
+
+:root {
+    --clr-primary: #F08431;
+    --clr-secondary: #233450;
+    --clr-text-black: #000;
+    --clr-text-white: #fff;
+    --clr-hr: #F08431;
+    --clr-secondary-background: #9C9C9C;
+}
+
+/* ========== Global Styling ========== */
+section {
+    margin-top: 50px;
+}
+
+.title {
+    font-family: Biko;
+    color: var(--clr-text-black);
+    font-size: 28px;
+}
+
+.sub-title {
+    font-family: Myriad;
+    color: var(--clr-text-black);
+    font-size: 16px;
+}
+
+hr {
+    display: inline-block;
+    border-top: 3px solid var(--clr-hr) !important;
+    width: 20%;
+}
+
+.cta {
+    cursor: pointer;
+    padding: 0.4rem 1.5rem !important;
+    width: 100px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
+/* ========== End Global Styling ========== */
+
+/* ========== Styling ========== */
+
+/* Navbar */ 
+.navbar {
+    background: rgba(0, 0, 0, .2) !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand img {
+    cursor: pointer;
+    width: 180px;
+    height: 30px;
+}
+
+.nav-link {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 20px;
+}
+/* Navbar */
+
+/* Carousel */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+}
+
+.carousel-caption .header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.carousel-caption .header-title span {
+    color: var(--clr-primary);
+}
+
+.carousel-caption .header-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--clr-text-white);
+}
+/* Carousel */
+
+/* About */
+.about-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    color: var(--clr-text-white);
+    margin-top: -100px;
+    background-color: var(--clr-text-white);
+    padding: 40px;
+    z-index: 10;
+}
+
+.about-heading .title {
+    font-size: 28px;
+}
+
+.about-thumbnail {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* About */
+
+/* Product & Services */
+.product {
+    margin-top: 50px;
+}
+
+.product-caption .title {
+    font-size: 28px;
+}
+
+.services {
+    margin-top: 30px;
+}
+
+.services-caption {
+    margin-top: 20px;
+}
+/* Product & Services */
+
+/* Counters */
+.counters {
+    margin-top: 50px;
+}
+
+.fas {
+    font-size: 40px;
+}
+
+.numbers {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--clr-primary);
+}
+
+.type {
+    font-size: 14px;
+    color: var(--clr-primary);
+}
+/* Counters */
+
+/* Our Projects */
+.our-projects {
+    margin-top: 50px;
+}
+
+.our-projects .title {
+    font-size: 28px;
+}
+
+.our-projects .carousel-item {
+    height: 70vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.our-projects .btn {
+    color: var(--clr-text-white);
+    background-color: var(--clr-primary);
+    border-radius: 5px;
+}
+
+.our-projects .carousel-caption {
+    display: block;
+    top: 70%;
+}
+/* Our Projects */
+
+/* ISO Certificate */
+.iso-certificate {
+    margin-top: 70px;
+}
+
+.iso-certificate .title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.certificate {
+    background-color: var(--clr-secondary-background);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.certificate img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iso-bottom img {
+    width: 50%;
+}
+/* ISO Certificate */
+
+/* Contact Form */
+.contact-form {
+    margin-top: 50px;
+}
+
+.contact-form .title {
+    text-align: center;
+}
+
+input,
+textarea {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.contact-form .sub-title {
+    font-weight: 700;
+    color: var(--clr-primary);
+    text-align: center;
+}
+
+label {
+    font-weight: 700;
+    color: var(--clr-primary);
+}
+
+.contact-form a {
+    text-align: center;
+}
+
+.contact-form .cta {
+    margin-top: 50px;
+}
+
+.contact-form .btn-submit {
+    cursor: pointer;
+    padding: 0.28rem 1.5rem !important;
+    width: 130px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-loading {
+    cursor: pointer;
+    padding: 0.2rem 1.1rem !important;
+    width: 130px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form button:hover {
+    background-color: var(--clr-primary);
+    color: white;
+}
+.maps {
+    margin-top: 50px;
+}
+
+.maps iframe {
+    display: block;
+    top: 0;
+    height: 330px;
+}
+/* Contact Form */
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+    background-color: var(--clr-secondary);
+    text-align: center;
+    padding: 40px;
+}
+
+.footer .logo {
+    padding: 20px;
+}
+
+.footer h5 {
+    color: var(--clr-text-white);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.logo-text {
+    color: var(--clr-text-white);
+    font-weight: 700;
+}
+/* Footer */
+
+/* ===== Responsive ===== */
+@media (min-width: 576px) {
+    .carousel-caption .header-title {
+        font-size: 42px;
+    }
+
+    .carousel-caption .header-sub-title {
+        font-size: 14px;
+    }
+
+    .fas {
+        font-size: 54px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .carousel-caption .header-title {
+        font-size: 48px;
+    }
+
+    .carousel-caption .header-sub-title {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .product .thumbnail {
+        display: block;
+        top: 25px;
+    }
+
+    .services .thumbnail {
+        display: block;
+        top: 35px;
+    }
+
+    .fas {
+        font-size: 60px;
+    }
+
+    .iso-bottom {
+        margin-top: 10px;
+    }
+
+    .iso-bottom img {
+        width: 180px;
+    }
+
+    .maps iframe {
+        margin-top: 80px;
+        height: 255px;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 140px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 35%;
+        text-align: left;
+    }
+
+    .about-heading {
+       top: 80px;
+    }
+
+    .product-caption {
+        display: block;
+        top: 40px;
+    }
+
+    .services-caption {
+        display: block;
+        top: 50px;
+    }
+
+    .counters {
+        margin-top: 100px;
+    }
+
+    .fas {
+        font-size: 70px;
+    }
+
+    .certificate img {
+        width: 500px;
+        height: 370px;
+    }
+
+    .contact-form .title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .carousel-caption .header-title {
+        font-size: 62px;
+    }
+
+    .carousel-caption .header-sub-title {
+        font-size: 18px;
+    }
+
+    .counters {
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .numbers {
+        font-size: 32px;
+    }
+
+    .type {
+        font-size: 18px;
+    }
+
+    .fas {
+        font-size: 65px;
+    }
+
+    .certificate img {
+        width: 500px;
+        height: 430px;
+    }
+
+    .maps iframe {
+        margin-top: 80px;
+        height: 265px;
+    }
+}
+
+/* ========== End Styling ========== */

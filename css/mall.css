@@ -1,0 +1,201 @@
+/* ========== Fonts ========== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@font-face {
+    font-family: Biko;
+    src: url("../assets/fonts/Biko/Biko.otf");
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url("../assets/fonts/Myriad/Myriad.otf");
+}
+/* ========== End Fonts ========== */
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Myriad;
+    display: block;
+}
+
+:root {
+    --clr-primary: #F08431;
+    --clr-secondary: #233450;
+    --clr-text-black: #000;
+    --clr-text-white: #fff;
+    --clr-hr: #F08431;
+    --clr-secondary-background: #9C9C9C;
+}
+
+/* ========== Global Styling ========== */
+.jumbotron .logo img {
+    width: 320px;
+}
+
+.title {
+    font-family: Biko;
+    color: var(--clr-text-black);
+    font-size: 28px;
+}
+
+.sub-title {
+    font-family: Myriad;
+    color: var(--clr-text-black);
+    font-size: 16px;
+}
+
+hr {
+    display: inline-block;
+    border-top: 3px solid var(--clr-hr) !important;
+    width: 20%;
+}
+
+.cta {
+    cursor: pointer;
+    padding: 0.4rem 1.5rem !important;
+    width: 100px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
+
+.location,
+.card-text {
+    color: var(--clr-secondary);
+}
+
+.location {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Biko;
+}
+
+.card-text {
+    font-weight: 400;
+    font-family: Myriad;
+}
+/* ========== End Global Styling ========== */
+
+/* ========== Styling ========== */
+/* Jumbotron */
+.jumbotron {
+    background-image: url('../assets/img/background-jumbotron.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -15px;
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron:after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #233450;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+}
+/* Jumbotron */
+
+/* Theater Cards */
+.card {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.mall {
+    margin-top: 50px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+/* Theater Cards */
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+    background-color: var(--clr-secondary);
+    text-align: center;
+    padding: 40px;
+}
+
+.footer .logo {
+    padding: 20px;
+}
+
+.footer h5 {
+    color: var(--clr-text-white);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.logo-text {
+    color: var(--clr-text-white);
+    font-weight: 700;
+}
+/* Footer */
+
+/* Button Back */
+.button-back {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* Button Back */
+
+/* ===== Responsive ===== */
+@media (min-width: 576px) {
+    .jumbotron .logo img {
+        width: 420px;
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotron .logo img {
+        width: 470px;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron .logo img {
+        width: 590px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron .logo img {
+        width: 640px;
+    }
+}
+/* ========== Styling ========== */
