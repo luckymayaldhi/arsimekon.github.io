@@ -1,9 +1,6 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@font-face {
-    font-family: Biko;
-    src: url("../assets/fonts/Biko/Biko.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 @font-face {
     font-family: Myriad;
@@ -40,7 +37,7 @@ section {
 }
 
 .title {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
     color: var(--clr-text-black);
     font-size: 28px;
 }
@@ -85,10 +82,16 @@ hr {
 }
 
 .display-4 {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     font-size: 36px;
     text-align: center;
     color: var(--clr-text-white);
+    line-height: 3px;
+}
+
+.jumbotron hr {
+    width: 140px;
 }
 /* Jumbotron */
 
@@ -143,7 +146,7 @@ hr {
 
 /* Button Back */
 .button-back {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 /* Button Back */
@@ -160,6 +163,10 @@ hr {
         font-size: 42px;
     }
 
+    .jumbotron hr {
+        width: 165px;
+    }
+
     .visi img {
         margin-top: -130px;
     }
@@ -168,6 +175,11 @@ hr {
 @media (min-width: 992px) {
     .display-4 {
         font-size: 50px;
+        line-height: 10px;
+    }
+
+    .jumbotron hr {
+        width: 190px;
     }
 
     .visi img {
@@ -183,6 +195,11 @@ hr {
 @media (min-width: 1200px) {
     .display-4 {
         font-size: 60px;
+        line-height: 15px;
+    }
+
+    .jumbotron hr {
+        width: 235px;
     }
 
     p {

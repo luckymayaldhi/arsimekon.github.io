@@ -1,9 +1,6 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@font-face {
-    font-family: Biko;
-    src: url("../assets/fonts/Biko/Biko.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 @font-face {
     font-family: Myriad;
@@ -40,7 +37,8 @@ section {
 }
 
 .title {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     color: var(--clr-text-black);
     font-size: 36px;
 }
@@ -85,10 +83,16 @@ hr {
 }
 
 .display-4 {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     font-size: 36px;
     text-align: center;
     color: var(--clr-secondary);
+    line-height: 3px;
+}
+
+.jumbotron hr {
+    width: 280px;
 }
 /* Jumbotron */
 
@@ -98,9 +102,23 @@ hr {
     text-align: center;
 }
 
+.hvac img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .plumbing .caption {
     margin-top: 30px;
     text-align: center;
+}
+
+.plumbing img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .fire-fighting .caption {
@@ -108,9 +126,23 @@ hr {
     text-align: center;
 }
 
+.fire-fighting img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .electrical .caption {
     margin-top: 30px;
     text-align: center;
+}
+
+.electrical img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .electronics .caption {
@@ -118,9 +150,23 @@ hr {
     text-align: center;
 }
 
+.electronics img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .specific-system .caption {
     margin-top: 30px;
     text-align: center;
+}
+
+.specific-system img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-text {
@@ -138,19 +184,23 @@ hr {
     text-align: center;
 }
 
+.it-products img {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .hotel-equipment .caption {
     margin-bottom: 30px;
     text-align: center;
 }
 
-.it-products img {
-    display: inline-block;
-    text-align: center;
-}
-
 .hotel-equipment img {
-    display: inline-block;
-    text-align: center;
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* Body */
 
@@ -169,8 +219,8 @@ hr {
 
 /* Button Back */
 .button-back {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* Button Back */
 
@@ -178,6 +228,11 @@ hr {
 @media (min-width: 768px) {
     .display-4 {
         font-size: 42px;
+        line-height: 10px;
+    }
+
+    .jumbotron hr {
+        width: 320px;
     }
 
     .hvac .caption {
@@ -185,9 +240,17 @@ hr {
         top: 40px;
     }
 
+    .hvac img {
+        width: 100%;
+    }
+
     .plumbing .caption {
         display: block;
         top: 30px;
+    }
+
+    .plumbing img {
+        width: 100%;
     }
 
     .fire-fighting .caption {
@@ -195,9 +258,17 @@ hr {
         top: 30px;
     }
 
+    .fire-fighting img {
+        width: 100%;
+    }
+
     .electrical .caption {
         display: block;
         top: -5px;
+    }
+
+    .electrical img {
+        width: 100%;
     }
 
     .electronics .caption {
@@ -205,9 +276,17 @@ hr {
         top: 20px;
     }
 
+    .electronics img {
+        width: 100%;
+    }
+
     .specific-system .caption {
         display: block;
         top: 25px;
+    }
+
+    .specific-system img {
+        width: 100%;
     }
 
     .it-products .caption {
@@ -215,15 +294,27 @@ hr {
         top: 20px;
     }
 
+    .it-products img {
+        width: 100%;
+    }
+
     .hotel-equipment .caption {
         display: block;
         top: 40px;
+    }
+
+    .hotel-equipment img {
+        width: 100%;
     }
 }
 
 @media (min-width: 992px) {
     .display-4 {
         font-size: 50px;
+    }
+
+    .jumbotron hr {
+        width: 380px;
     }
 
     .hvac .caption {
@@ -274,6 +365,11 @@ hr {
 
     .display-4 {
         font-size: 60px;
+        line-height: 20px;
+    }
+
+    .jumbotron hr {
+        width: 460px;
     }
 
     .hvac .caption {

@@ -1,9 +1,6 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@font-face {
-    font-family: Biko;
-    src: url("../assets/fonts/Biko/Biko.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 @font-face {
     font-family: Myriad;
@@ -40,7 +37,7 @@ body {
 }
 
 .title {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
     color: var(--clr-text-black);
     font-size: 28px;
 }
@@ -84,7 +81,7 @@ hr {
 .location {
     font-weight: 700;
     font-size: 20px;
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
 }
 
 .card-text {

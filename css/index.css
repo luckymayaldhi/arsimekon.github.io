@@ -1,9 +1,6 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@font-face {
-    font-family: Biko;
-    src: url("../assets/fonts/Biko/Biko.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 @font-face {
     font-family: Myriad;
@@ -21,8 +18,17 @@
 
 body {
     overflow-x: hidden;
+    overflow-y: auto;
     font-family: Myriad;
     display: block;
+    scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -100px 0 0;
 }
 
 :root {
@@ -40,9 +46,11 @@ section {
 }
 
 .title {
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     color: var(--clr-text-black);
     font-size: 28px;
+    line-height: 2px;
 }
 
 .sub-title {
@@ -58,6 +66,8 @@ hr {
 }
 
 .cta {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     cursor: pointer;
     padding: 0.4rem 1.5rem !important;
     width: 100px;
@@ -102,8 +112,9 @@ hr {
 
 /* Carousel */
 .carousel-item {
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
+    background-position: center center;
     position: relative;
     z-index: 1;
 }
@@ -119,7 +130,7 @@ hr {
 }
 
 .carousel-caption .header-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -130,7 +141,7 @@ hr {
 }
 
 .carousel-caption .header-sub-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: var(--clr-text-white);
@@ -152,7 +163,12 @@ hr {
     font-size: 28px;
 }
 
+.about hr {
+    width: 18%;
+}
+
 .about-thumbnail {
+    width: 75%;
     margin-top: 20px;
     display: block;
     margin-left: auto;
@@ -161,12 +177,30 @@ hr {
 /* About */
 
 /* Product & Services */
+.product .thumbnail img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .product {
     margin-top: 50px;
 }
 
 .product-caption .title {
     font-size: 28px;
+}
+
+.product hr {
+    width: 40%;
+}
+
+.services .thumbnail img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services {
@@ -188,6 +222,7 @@ hr {
 }
 
 .numbers {
+    font-family: 'Cabin', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: var(--clr-primary);
@@ -208,8 +243,12 @@ hr {
     font-size: 28px;
 }
 
+.our-projects hr {
+    width: 28%;
+}
+
 .our-projects .carousel-item {
-    height: 70vh;
+    height: 50vh;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -236,6 +275,10 @@ hr {
 .iso-certificate .title {
     font-size: 28px;
     text-align: center;
+}
+
+.iso-certificate hr {
+    width: 32%;
 }
 
 .certificate {
@@ -265,6 +308,7 @@ hr {
 
 .contact-form .title {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 input,
@@ -363,6 +407,10 @@ label {
 
 /* ===== Responsive ===== */
 @media (min-width: 576px) {
+    .carousel-item {
+        height: 75vh;
+    }
+
     .carousel-caption .header-title {
         font-size: 42px;
     }
@@ -374,10 +422,18 @@ label {
     .fas {
         font-size: 54px;
     }
+
+    .about hr {
+        width: 18%;
+    }
     
 }
 
 @media (min-width: 768px) {
+    .carousel-item {
+        height: 100vh;
+    }
+
     .carousel-caption .header-title {
         font-size: 48px;
     }
@@ -394,9 +450,29 @@ label {
         font-size: 16px;
     }
 
+    .about hr {
+        width: 10%;
+    }
+
     .product .thumbnail {
         display: block;
-        top: 25px;
+        top: 28px;
+    }
+
+    .product-caption {
+        margin-top: 30px;
+    }
+
+    .product .thumbnail img {
+        width: 100%;
+    }
+
+    .product hr {
+        width: 65%;
+    }
+
+    .services .thumbnail img {
+        width: 100%;
     }
 
     .services .thumbnail {
@@ -408,6 +484,18 @@ label {
         font-size: 60px;
     }
 
+    .our-projects hr {
+        width: 20%;
+    }
+
+    .our-projects .carousel-item {
+        height: 70vh;
+    }
+
+    .iso-certificate hr {
+        width: 25%;
+    }
+
     .iso-bottom {
         margin-top: 10px;
     }
@@ -417,7 +505,7 @@ label {
     }
 
     .maps iframe {
-        margin-top: 80px;
+        margin-top: 52px;
         height: 255px;
     }
 }
@@ -425,6 +513,13 @@ label {
 @media (min-width: 992px) {
     .title {
         font-size: 140px;
+    }
+
+    .carousel-item {
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
     }
 
     .carousel-caption {
@@ -437,9 +532,29 @@ label {
        top: 80px;
     }
 
+    .about hr {
+        width: 15%;
+    }
+
+    .about-thumbnail {
+        width: 40%;
+    }
+
+    .product .thumbnail img {
+        width: 100%;
+    }
+
     .product-caption {
         display: block;
-        top: 40px;
+        top: 60px;
+    }
+
+    .product hr {
+        width: 48%;
+    }
+
+    .services .thumbnail img {
+        width: 100%;
     }
 
     .services-caption {
@@ -453,6 +568,14 @@ label {
 
     .fas {
         font-size: 70px;
+    }
+
+    .our-projects hr {
+        width: 15%;
+    }
+
+    .iso-certificate hr {
+        width: 18%;
     }
 
     .certificate img {
@@ -482,6 +605,18 @@ label {
         font-size: 18px;
     }
 
+    .about hr {
+        width: 12%;
+    }
+
+    .product hr {
+        width: 40%;
+    }
+
+    .product-caption {
+        top: 40px;
+    }
+
     .counters {
         margin-top: 150px;
         margin-bottom: 100px;
@@ -499,13 +634,25 @@ label {
         font-size: 65px;
     }
 
+    .our-projects hr {
+        width: 13%;
+    }
+
+    .iso-certificate hr {
+        width: 15%;
+    }
+
+    .iso-certificate {
+        margin-top: 100px;
+    }
+
     .certificate img {
         width: 500px;
         height: 430px;
     }
 
     .maps iframe {
-        margin-top: 80px;
+        margin-top: 57px;
         height: 265px;
     }
 }

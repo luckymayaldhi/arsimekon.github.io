@@ -1,9 +1,6 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@font-face {
-    font-family: Biko;
-    src: url("../assets/fonts/Biko/Biko.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 @font-face {
     font-family: Myriad;
@@ -83,7 +80,7 @@ hr {
 
 .location {
     font-weight: 700;
-    font-family: Biko;
+    font-family: 'Cabin', sans-serif;
 }
 
 .card-text {
@@ -123,7 +120,7 @@ hr {
 /* Hero Image */
 .hero-image {
     background-image:  url("../assets/img/theater/banner.png");
-    height: 100vh;
+    height: 75vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +137,7 @@ hr {
     opacity: 0.7;
     padding: 1rem 4rem;
     position: absolute;
-    top: 408px;
+    top: 266px;
     font-size: 14px;
     color: white;
 }
@@ -216,6 +213,14 @@ hr {
     .jumbotron .logo img {
         width: 590px;
     }
+
+    .hero-image {
+        height: 100vh;
+    }
+    
+    .hero-text {
+        top: 409px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -224,7 +229,7 @@ hr {
     }
 
     .hero-text {
-        top: 495px;
+        top: 496px;
     }
 }
 /* ========== Styling ========== */
