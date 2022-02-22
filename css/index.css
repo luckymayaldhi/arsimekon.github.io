@@ -27,7 +27,7 @@ body {
 :target:before {
     content: "";
     display: block;
-    height: 80px;
+    height: 100px;
     margin: -100px 0 0;
 }
 
@@ -78,6 +78,7 @@ hr {
     font-size: 14px;
     text-decoration: none;
     transition: all 0.3s ease 0s;
+    text-align: center;
 }
 
 .cta:hover {
@@ -106,7 +107,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 /* Navbar */
 
@@ -114,7 +115,7 @@ hr {
 .carousel-item {
     height: 60vh;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
