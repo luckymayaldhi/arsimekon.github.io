@@ -137,7 +137,7 @@ hr {
     opacity: 0.7;
     padding: 1rem 2rem;
     position: absolute;
-    top: 320px;
+    top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
@@ -237,7 +237,7 @@ hr {
     }
 
     .hero-text {
-        top: 450px;
+        top: 270px;
     }
 }
 
@@ -247,7 +247,7 @@ hr {
     }
 
     .hero-text {
-        top: 550px;
+        top: 330px;
     }
 }
 /* ========== Styling ========== */
