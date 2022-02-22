@@ -65,6 +65,28 @@ hr {
     width: 20%;
 }
 
+.navbar .btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.4rem 1.5rem !important;
+    width: 100px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.navbar .btn:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
+
 .cta {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -150,6 +172,13 @@ hr {
 /* Carousel */
 
 /* About */
+.about:target:before {
+    content: "";
+    display: block;
+    height: 170px;
+    margin: -100px 0 0;
+}
+
 .about-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
