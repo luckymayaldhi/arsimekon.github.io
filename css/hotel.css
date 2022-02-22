@@ -135,11 +135,9 @@ hr {
 .hero-text {
     background: rgba(11, 35, 74, 1);
     opacity: 0.7;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 266px;
     font-size: 14px;
     color: white;
 }
@@ -237,7 +235,7 @@ hr {
     }
 
     .hero-text {
-        top: 300px;
+        top: 411px;
     }
 }
 
@@ -247,7 +245,7 @@ hr {
     }
 
     .hero-text {
-        top: 350px;
+        top: 498px;
     }
 }
 /* ========== Styling ========== */
